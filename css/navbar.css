@@ -81,6 +81,7 @@
 }
 
 .ConnectWalletButton{
+    font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
     position: relative;
@@ -89,11 +90,26 @@
     border-radius: 15px;
     height: 36px;
     padding-inline: 10px;
-    font-size: 20px;
+    padding-block: 5px;
+    font-size: 22px;
     cursor: pointer;
+    
 }
 .ConnectWalletButton:hover {
-    box-shadow: #f73e57 0px 0px 10px;  
+    text-shadow: #f73e57 0px 0px 10px;
+    box-shadow: rgba(247, 62, 87, 0.875) 0px 0px 17px;
+    background: #141414;
+    text-decoration: underline;
+}
+
+.ConnectWalletButton:active {
+    /* cursor: pointer; */
+    /* text-decoration: none; */
+    /* font-weight: 600; */
+    text-decoration: underline;
+    text-shadow: #f73e57 0px 0px 10px;
+    background: #141414;
+    /* transform: translateY(4px); */
 }
 
 /* .UserIcon {

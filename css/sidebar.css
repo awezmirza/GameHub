@@ -42,11 +42,11 @@
   background: #141414;
 }
 
-.MenuWrapa::selection {
+/* .MenuWrapa::selection {
   background-color: #f73e57;
-  /* blur the corners of bg in future */
+  blur the corners of bg in future
   color: #1b1b1b;
-}
+} */
 
 .logoX {
   display: flex;
@@ -124,8 +124,8 @@
   background: none;
 }
 
-.developer section::selection {
+/* .developer section::selection {
   background-color: #f73e57;
-  /* blur the corners of bg in future */
+  blur the corners of bg in future
   color: #1b1b1b;
-}
+} */

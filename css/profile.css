@@ -106,25 +106,16 @@
     border: none;
     background: none;
     display: block;
-    margin: auto;
-    /* position: absolute; */
-    /* justify-content: center; */
-    /* display: flex; */
-    /* margin: auto; */
-    /* position: relative; */
-    /* bottom: -190px; */
-    /* position: relative; */
-    /* top: 90%; */
-    /* bottom: 10%; */
-    /* bottom: ; */
+    margin: auto; 
+    cursor: pointer;
 }
 
 #SignOutButton:hover {
-    cursor: pointer;
-    text-decoration: none;
     /* font-weight: 600; */
+    /* text-decoration: none; */
     text-decoration: underline;
     text-shadow: #f73e57 0px 0px 10px;
+    box-shadow: rgba(247, 62, 87, 0.875) 0px 0px 17px;
     background: #141414;
 }
 
