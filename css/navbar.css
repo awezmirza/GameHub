@@ -41,13 +41,6 @@
     /* cursor: pointer; */
 }
 
-
-#logo::selection {
-    background-color: #f73e57;
-    /* blur the corners of bg in future */
-    color: #1b1b1b;
-}
-
 #logo a {
     text-decoration: none;
 }
@@ -71,12 +64,6 @@
     box-shadow: #f73e57 0px 0px 10px;
 }
 
-#AwezImg::selection {
-    background-color: #f73e57;
-    /* blur the corners of bg in future */
-    color: #1b1b1b;
-}
-
 .usernamecontainer {
     margin-right: 15px;
     font-size: 22px;
@@ -93,12 +80,21 @@
     text-shadow: #f73e57 0px 0px 10px;
 }
 
-.usernamecontainer::selection {
-    background-color: #f73e57;
-    /* blur the corners of bg in future */
-    color: #1b1b1b;
+.ConnectWalletButton{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 15px;
+    /* border: 2px solid #e4e4e4; */
+    border-radius: 15px;
+    height: 36px;
+    padding-inline: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
-
+.ConnectWalletButton:hover {
+    box-shadow: #f73e57 0px 0px 10px;  
+}
 
 /* .UserIcon {
     border-radius: 50%;
