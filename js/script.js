@@ -8,3 +8,5 @@ signOutButton.addEventListener('click', function() {
   // Redirect to index.html
   window.location.href = 'index.html';
 });
+
+

@@ -1,3 +1,4 @@
+
 .MenuWrap {
   position: fixed;
   top: 0;
@@ -24,14 +25,6 @@
   flex-direction: column;
   text-decoration: none;
   color: #e4e4e4;
-}
-
-.activeMenuWrapa {
-  text-decoration: none;
-  /* font-weight: 600; */
-  text-decoration: underline;
-  text-shadow: #f73e57 0px 0px 10px;
-  background: #141414;
 }
 
 .MenuWrapa:hover {
@@ -99,6 +92,16 @@
 } */
   /* blur the corners of bg in future */
   /* color: #1b1b1b; */
+
+.darkmode{
+  max-width: 59px;
+  filter: invert();
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  position: relative;
+  bottom: 29px;
+}
 
 .developer {
   position: absolute;

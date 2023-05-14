@@ -41,6 +41,11 @@ body {
     /* background-image: linear-gradient(to right, #08c1a8, #088978, #088978); */
     font-family: 'Ubuntu', sans-serif;
 }
+
+body.lightmode{
+    background-color: #ffffff;
+}
+
 /* .NavBar {
     position: fixed;
     width: 100%;
