@@ -1,0 +1,121 @@
+.NavBar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.border {
+    height: 64px;
+    align-items: center;
+    display: flex;
+    /* border-bottom: 2px solid black; */
+    box-shadow: rgb(247, 62, 87, 0.5) 0px 0px 17px;
+    background-color: #1b1b1b;
+
+}
+
+.MenuIcon {
+    max-width: 32px;
+    /* display: flex; */
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+    filter: invert();
+}
+
+.MenuIcon:hover {
+    box-shadow: #08c1a8 0px 0px 10px;
+}
+
+.MenuIcon::selection {
+    background-color: #08c1a8;
+    /* blur the corners of bg in future */
+}
+
+#logo {
+    margin-left: 60px;
+    font-size: 36px;
+    color: #e4e4e4;
+    text-shadow: #f73e57 0px 0px 10px;
+    font-family: 'Lilita One', cursive;
+    /* cursor: pointer; */
+}
+
+
+#logo::selection {
+    background-color: #f73e57;
+    /* blur the corners of bg in future */
+    color: #1b1b1b;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+.profile {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+#AwezImg {
+    border-radius: 50%;
+    max-width: auto;
+    max-height: 48px;
+    cursor: pointer;
+}
+
+#AwezImg:hover {
+    box-shadow: #f73e57 0px 0px 10px;
+}
+
+#AwezImg::selection {
+    background-color: #f73e57;
+    /* blur the corners of bg in future */
+    color: #1b1b1b;
+}
+
+.usernamecontainer {
+    margin-right: 15px;
+    font-size: 22px;
+    color: #e4e4e4;
+    padding-block: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.usernamecontainer:hover {
+    text-decoration: none;
+    /* font-weight: 600; */
+    text-decoration: underline;
+    text-shadow: #f73e57 0px 0px 10px;
+}
+
+.usernamecontainer::selection {
+    background-color: #f73e57;
+    /* blur the corners of bg in future */
+    color: #1b1b1b;
+}
+
+
+/* .UserIcon {
+    border-radius: 50%;
+    max-width: auto;
+    max-height: 48px;
+*/
+/* border: 2px solid black; */
+/* }  */
+
+/* .UserIcon:hover {
+    box-shadow: #f73e57 0px 0px 10px;
+}
+
+.UserIcon::selection {
+    background-color: #f73e57;
+*/
+
+/* blur the corners of bg in future */
+/*  color: #1b1b1b;
+} */

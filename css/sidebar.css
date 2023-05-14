@@ -1,0 +1,131 @@
+.MenuWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 245px;
+  padding-top: 68px;
+  transform: translateX(-110%);
+  transition: transform .7s;
+  color: aliceblue;
+  background-color: #1b1b1b;
+  border-right: 0px;
+  box-shadow: rgb(247, 62, 87, 0.5) 1px 0px 17px;
+}
+
+.MenuWrap.active {
+  transform: translateX(0);
+}
+
+.MenuWrapa {
+  font-size: 24px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #e4e4e4;
+}
+
+.activeMenuWrapa {
+  text-decoration: none;
+  /* font-weight: 600; */
+  text-decoration: underline;
+  text-shadow: #f73e57 0px 0px 10px;
+  background: #141414;
+}
+
+.MenuWrapa:hover {
+  text-decoration: none;
+  /* font-weight: 600; */
+  text-decoration: underline;
+  text-shadow: #f73e57 0px 0px 10px;
+  background: #141414;
+}
+
+.MenuWrapa::selection {
+  background-color: #f73e57;
+  /* blur the corners of bg in future */
+  color: #1b1b1b;
+}
+
+.logoX {
+  display: flex;
+  position: absolute;
+  /* position: relative; */
+  top: 11px;
+  align-items: center;
+  /* flex-direction: row; */
+  width: 225px;
+}
+
+/* .CloseMenuIcon { */
+  /* filter: invert();
+  background: none;
+  border: 0px;
+  position: absolute;
+  right: 7px;
+  top: 18px;
+  font-size: 30px;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  display: flex;
+  margin: 0%;
+  padding: 0; */
+  /* max-width: 32px; */
+  /* display: flex; */
+  /* position: absolute;
+  left: 10px;
+  cursor: pointer;
+  filter: invert();
+
+} */
+
+/* .CloseMenuIcon img {
+  max-width: 32px;
+  max-height: auto;
+  margin: auto;
+  padding: auto;
+} */
+
+/* .CloseMenuIcon:hover {
+  box-shadow: #08c1a8 0px 0px 10px; */
+  /* cursor: pointer; */
+  /* text-decoration: none; */
+/* } */
+
+/* .CloseMenuIcon img::selection {
+  background-color: #08c1a8;
+} */
+  /* blur the corners of bg in future */
+  /* color: #1b1b1b; */
+
+.developer {
+  position: absolute;
+  text-align: center;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 20px;
+  color: #e4e4e4;
+}
+
+.developer a {
+  font-size: 20px;
+  padding: 0;
+}
+
+.developer a:hover {
+  text-decoration: none;
+  /* font-weight: 600; */
+  text-decoration: underline;
+  text-shadow: #f73e57 0px 0px 10px;
+  background: none;
+}
+
+.developer section::selection {
+  background-color: #f73e57;
+  /* blur the corners of bg in future */
+  color: #1b1b1b;
+}
