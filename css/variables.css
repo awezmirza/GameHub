@@ -1,0 +1,46 @@
+:root {
+  --primarycolor: #1b1b1b;
+  /* var(--primarycolor); */
+  --secondarycolor: #e4e4e4;
+  /* var(--secondarycolor); */
+  --shadowcolor: #f73e57;
+  /* var(--shadowcolor); */
+  --boxshadowcolor: rgb(247, 62, 87, 0.5);
+  /* var(--boxshadowcolor); */
+  --hovercolor: #141414;
+  /* var(--hovercolor); */
+  --scbarhover: rgb(250, 167, 178);
+  /* var(--scbarhover); */
+  --MenuIconhover: #08c1a8;
+  /* var(--MenuIconhover); */
+  --ConnectWalletButtonhover: rgba(247, 62, 87, 0.875);
+  /* var(--ConnectWalletButtonhover); */
+  --bordercolor: white;
+  /* var(--bordercolor); */
+  --menuiconinvert: invert(1);
+  /* var(--menuiconinvert); */
+}
+
+.lighttheme {
+  --primarycolor: #08c1a8;
+  /* var(--primarycolor); */
+  --secondarycolor: #1c1818;
+  /* var(--secondarycolor); */
+  --shadowcolor: #00ff80;
+  /* var(--shadowcolor); */
+  --boxshadowcolor: rgba(25, 255, 9, 0.5);
+  /* var(--boxshadowcolor); */
+  --hovercolor: #056a5d;
+  /* var(--hovercolor); */
+  --scbarhover: rgb(0, 195, 255);
+  /* var(--scbarhover); */
+  --MenuIconhover: #99c108;
+  /* var(--MenuIconhover); */
+  --ConnectWalletButtonhover: rgba(29, 207, 243, 0.875);
+  /* var(--ConnectWalletButtonhover); */
+  --bordercolor: black;
+  /* var(--bordercolor); */
+  --menuiconinvert: invert(0);
+  /* var(--menuiconinvert); */
+
+}

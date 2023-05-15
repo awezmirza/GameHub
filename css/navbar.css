@@ -1,3 +1,5 @@
+@import 'variables.css';
+
 .NavBar {
     position: sticky;
     top: 0;
@@ -9,8 +11,8 @@
     align-items: center;
     display: flex;
     /* border-bottom: 2px solid black; */
-    box-shadow: rgb(247, 62, 87, 0.5) 0px 0px 17px;
-    background-color: #1b1b1b;
+    box-shadow: var(--boxshadowcolor) 0px 0px 17px;
+    background-color: var(--primarycolor);
 
 }
 
@@ -20,23 +22,23 @@
     position: absolute;
     left: 10px;
     cursor: pointer;
-    filter: invert();
+    filter: var(--menuiconinvert); 
 }
 
 .MenuIcon:hover {
-    box-shadow: #08c1a8 0px 0px 10px;
+    box-shadow: var(--MenuIconhover) 0px 0px 10px;
 }
 
 .MenuIcon::selection {
-    background-color: #08c1a8;
+    background-color: var(--MenuIconhover);
     /* blur the corners of bg in future */
 }
 
 #logo {
     margin-left: 60px;
     font-size: 36px;
-    color: #e4e4e4;
-    text-shadow: #f73e57 0px 0px 10px;
+    color: var(--secondarycolor);
+    text-shadow: var(--shadowcolor) 0px 0px 10px;
     font-family: 'Lilita One', cursive;
     /* cursor: pointer; */
 }
@@ -61,13 +63,13 @@
 }
 
 #AwezImg:hover {
-    box-shadow: #f73e57 0px 0px 10px;
+    box-shadow: var(--shadowcolor) 0px 0px 10px;
 }
 
 .usernamecontainer {
     margin-right: 15px;
     font-size: 22px;
-    color: #e4e4e4;
+    color: var(--secondarycolor);
     padding-block: 1rem;
     cursor: pointer;
     text-decoration: none;
@@ -77,7 +79,7 @@
     text-decoration: none;
     /* font-weight: 600; */
     text-decoration: underline;
-    text-shadow: #f73e57 0px 0px 10px;
+    text-shadow: var(--shadowcolor) 0px 0px 10px;
 }
 
 .ConnectWalletButton{
@@ -86,7 +88,7 @@
     align-items: center;
     position: relative;
     right: 15px;
-    /* border: 2px solid #e4e4e4; */
+    /* border: 2px solid var(--secondarycolor); */
     border-radius: 15px;
     height: 36px;
     padding-inline: 10px;
@@ -96,9 +98,9 @@
     
 }
 .ConnectWalletButton:hover {
-    text-shadow: #f73e57 0px 0px 10px;
-    box-shadow: rgba(247, 62, 87, 0.875) 0px 0px 17px;
-    background: #141414;
+    text-shadow: var(--shadowcolor) 0px 0px 10px;
+    box-shadow: var(--ConnectWalletButtonhover) 0px 0px 17px;
+    background: var(--hovercolor);
     text-decoration: underline;
 }
 
@@ -107,8 +109,8 @@
     /* text-decoration: none; */
     /* font-weight: 600; */
     text-decoration: underline;
-    text-shadow: #f73e57 0px 0px 10px;
-    background: #141414;
+    text-shadow: var(--shadowcolor) 0px 0px 10px;
+    background: var(--hovercolor);
     /* transform: translateY(4px); */
 }
 
@@ -121,13 +123,13 @@
 /* }  */
 
 /* .UserIcon:hover {
-    box-shadow: #f73e57 0px 0px 10px;
+    box-shadow: var(--shadowcolor) 0px 0px 10px;
 }
 
 .UserIcon::selection {
-    background-color: #f73e57;
+    background-color: var(--shadowcolor);
 */
 
 /* blur the corners of bg in future */
-/*  color: #1b1b1b;
+/*  color: var(--primarycolor);
 } */
