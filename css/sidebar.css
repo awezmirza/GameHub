@@ -8,7 +8,7 @@
   width: 245px;
   padding-top: 68px;
   transform: translateX(-110%);
-  transition: transform .7s;
+  transition: transform .7s ease;
   /* color: var(--secondarycolor); */
   background-color: var(--primarycolor);
   border-right: 0px;
@@ -27,6 +27,7 @@
   text-decoration: none;
   color: var(--secondarycolor);
 }
+
 
 .MenuWrapa:hover {
   text-decoration: none;
@@ -53,7 +54,7 @@
 }
 
 /* .CloseMenuIcon { */
-  /* filter: invert();
+/* filter: invert();
   background: none;
   border: 0px;
   position: absolute;
@@ -66,9 +67,9 @@
   display: flex;
   margin: 0%;
   padding: 0; */
-  /* max-width: 32px; */
-  /* display: flex; */
-  /* position: absolute;
+/* max-width: 32px; */
+/* display: flex; */
+/* position: absolute;
   left: 10px;
   cursor: pointer;
   filter: invert();
@@ -84,25 +85,51 @@
 
 /* .CloseMenuIcon:hover {
   box-shadow: #08c1a8 0px 0px 10px; */
-  /* cursor: pointer; */
-  /* text-decoration: none; */
+/* cursor: pointer; */
+/* text-decoration: none; */
 /* } */
 
 /* .CloseMenuIcon img::selection {
   background-color: #08c1a8;
 } */
-  /* blur the corners of bg in future */
-  /* color: var(--primarycolor); */
+/* blur the corners of bg in future */
+/* color: var(--primarycolor); */
 
-.darkmode{
-  max-width: 59px;
+.colormode {
   filter: invert();
   display: flex;
-  margin: auto;
-  cursor: pointer;
-  position: relative;
-  bottom: 29px;
+  padding-top: 29px;
+  justify-content: center;
 }
+
+.togglecoloricon{
+  cursor: pointer;
+  transform: rotate(180deg);
+  transition: transform .3s ease;
+}
+
+.colormode img::selection{
+  background-color: var(--MenuIconhover);
+}
+
+.togglecoloricon.onclick{
+  transform: rotate(360deg);  
+}
+
+.colormode img{
+  height: 36px;
+  padding: 15px;
+}
+
+.colormode:hover{
+  -shadow: var(--MenuIconhover) 0px 0px 10px;;
+}
+
+.colormode::selection {
+  background-color: var(--MenuIconhover);
+  /* blur the corners of bg in future */
+}
+
 
 .developer {
   position: absolute;
@@ -113,11 +140,13 @@
   margin: auto;
   font-size: 20px;
   color: var(--secondarycolor);
+  cursor: default;
 }
 
 .developer a {
   font-size: 20px;
   padding: 0;
+
 }
 
 .developer a:hover {

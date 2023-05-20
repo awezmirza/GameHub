@@ -1,5 +1,13 @@
 @import 'variables.css';
 
+#navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* z-index: 100; */
+  }
+  
+
 .NavBar {
     position: sticky;
     top: 0;
@@ -55,18 +63,35 @@
     align-items: center;
 }
 
-#AwezImg {
+/* #UserImg {
     border-radius: 50%;
     max-width: auto;
     max-height: 48px;
     cursor: pointer;
 }
 
-#AwezImg:hover {
+#UserImg:hover {
     box-shadow: var(--shadowcolor) 0px 0px 10px;
+} */
+
+#UserIcon{
+    border-radius: 50%;
+    max-width: auto;
+    max-height: 48px;
+    cursor: pointer;
+    filter: var(--menuiconinvert); 
 }
 
-.usernamecontainer {
+#UserIcon:hover{
+    box-shadow: var(--MenuIconhover) 0px 0px 10px;
+}
+
+#UserIcon::selection {
+    background-color: var(--MenuIconhover);
+    /* blur the corners of bg in future */
+}
+
+/* .usernamecontainer {
     margin-right: 15px;
     font-size: 22px;
     color: var(--secondarycolor);
@@ -77,31 +102,30 @@
 
 .usernamecontainer:hover {
     text-decoration: none;
-    /* font-weight: 600; */
     text-decoration: underline;
     text-shadow: var(--shadowcolor) 0px 0px 10px;
-}
+} */
 
 .ConnectWalletButton{
-    font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
     position: relative;
     right: 15px;
-    /* border: 2px solid var(--secondarycolor); */
-    border-radius: 15px;
+    border-radius: 4px;
     height: 36px;
     padding-inline: 10px;
-    padding-block: 5px;
+    /* padding-block: 5px; */
     font-size: 22px;
     cursor: pointer;
-    
+    transition: box-shadow .7s ease;    
 }
+
 .ConnectWalletButton:hover {
-    text-shadow: var(--shadowcolor) 0px 0px 10px;
-    box-shadow: var(--ConnectWalletButtonhover) 0px 0px 17px;
-    background: var(--hovercolor);
-    text-decoration: underline;
+    /* animation: boxShadowAnimation 0.8s linear; */
+    /* text-shadow: var(--shadowcolor) 0px 0px 10px; */
+    box-shadow: var(--ConnectWalletButtonhover) 0px 0px 10px;
+    /* background: var(--hovercolor); */
+    /* text-decoration: underline; */
 }
 
 .ConnectWalletButton:active {
@@ -110,26 +134,6 @@
     /* font-weight: 600; */
     text-decoration: underline;
     text-shadow: var(--shadowcolor) 0px 0px 10px;
-    background: var(--hovercolor);
+    /* background: var(--hovercolor); */
     /* transform: translateY(4px); */
 }
-
-/* .UserIcon {
-    border-radius: 50%;
-    max-width: auto;
-    max-height: 48px;
-*/
-/* border: 2px solid black; */
-/* }  */
-
-/* .UserIcon:hover {
-    box-shadow: var(--shadowcolor) 0px 0px 10px;
-}
-
-.UserIcon::selection {
-    background-color: var(--shadowcolor);
-*/
-
-/* blur the corners of bg in future */
-/*  color: var(--primarycolor);
-} */
