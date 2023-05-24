@@ -1,53 +1,74 @@
 @import 'variables.css';
 
 #gamescontainer {
-    transition: margin-left 0.7s ease,margin-right 0.7s ease;;
-    display: grid;
-    margin-top: 50px;
-    place-items: center;
-    margin-inline: 25px;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));  
-    column-gap: 20px;
-    padding-inline: 25px;
-    /* border: 1px solid red; */
-  }
-  
-  #gamescontainer.active {
-    margin-left: 295px;
-    margin-right: 50px;
-  }
-  
-  .gamediv {
-    display: flex;
-    height: 350px;
-    width: 350px;
-    /* margin-left: 50px; */
-    /* margin-right: 50px; */
-    /* margin-inline: auto; */
-    margin-block: 50px;
-    align-items: center;
-    justify-content: center;
-    /* border-radius: 25px; */
-    /* margin-inline: 25px; */
-    /* border: 1px solid white; */
-    text-align: center;
-  }
-
-.gamediv img{
-    height: 100%;
-    width: 100%;
-    border-radius: 25px;
-    transition: height 0.7s ease, width 0.7s ease,box-shadow 0.7s ease;
+  transition: margin-left 0.7s ease, margin-right 0.7s ease;
+  display: grid;
+  margin-top: 50px;
+  place-items: center;
+  margin-inline: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  column-gap: 20px;
+  padding-inline: 25px;
+  /* border: 1px solid red; */
 }
 
-.gamediv img:hover{
-    height: 103%;
-    width: 103%;
-    box-shadow: var(--boxshadowcolor) 0px 0px 50px;
-    cursor: pointer;
+#gamescontainer.active {
+  margin-left: 295px;
+  margin-right: 50px;
 }
 
-.comingsoongames{
+.gamediv {
+  display: flex;
+  height: 350px;
+  width: 350px;
+  margin-block: 50px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+
+.gamediv img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  transition: height 0.7s ease, width 0.7s ease, box-shadow 0.7s ease;
+}
+
+.gamediv img:hover {
+  height: 103%;
+  width: 103%;
+  box-shadow: var(--boxshadowcolor) 0px 0px 50px;
+  cursor: pointer;
+}
+
+.hover-text {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+  bottom: -5.5px;
+  width: 360.5px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding-block: 3px;
+}
+
+.gamediv:hover .hover-text {
+  opacity: 1;
+}
+
+.comingsoongames {
   font-size: 40px !important;
   cursor: default;
+}
+
+.GameName {
+  font-size: 32px;
+}
+
+.caption {
+  padding-block: 2px;
 }
