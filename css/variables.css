@@ -8,7 +8,7 @@
   /* var(--shadowcolor); */
   --boxshadowcolor: rgb(247, 62, 87, 0.5);
   /* var(--boxshadowcolor); */
-  --hovercolor: #141414;
+  --hovercolor: hsla(0, 0%, 0%, 0.3);
   /* var(--hovercolor); */
   --scbarhover: rgb(250, 167, 178);
   /* var(--scbarhover); */

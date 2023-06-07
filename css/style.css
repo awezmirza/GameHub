@@ -3,6 +3,7 @@
 * {
     color: var(--secondarycolor);
     list-style-type: none;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -43,6 +44,11 @@ body {
     /* background-image: linear-gradient(to right, #08c1a8, #088978, #088978); */
     font-family: 'Ubuntu', sans-serif;
 }
+
+.selectno{
+    user-select: none;
+}
+
 
 /* .NavBar {
     position: fixed;
