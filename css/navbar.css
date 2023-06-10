@@ -20,8 +20,7 @@
     display: flex;
     /* border-bottom: 2px solid black; */
     box-shadow: var(--boxshadowcolor) 0px 0px 17px;
-    background-color: var(--primarycolor);
-
+    background-color: var(--navcolor);
 }
 
 .MenuIcon {
@@ -117,7 +116,7 @@
     /* padding-block: 5px; */
     font-size: 22px;
     cursor: pointer;
-    transition: box-shadow .7s ease;    
+    /* transition: box-shadow .7s ease;     */
 }
 
 .ConnectWalletButton:hover {

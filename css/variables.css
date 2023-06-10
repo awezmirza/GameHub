@@ -2,6 +2,8 @@
 :root {
   --primarycolor: #1b1b1b;
   /* var(--primarycolor); */
+  --navcolor: hwb(0 11% 89% / 0.7);
+  /* var(--navcolor); */
   --secondarycolor: #e4e4e4;
   /* var(--secondarycolor); */
   --shadowcolor: #f73e57;
@@ -26,6 +28,8 @@
 .lighttheme {
   --primarycolor: #08c1a8;
   /* var(--primarycolor); */
+  --navcolor: hwb(0 11% 89% / 0.5);
+  /* var(--navcolor); */
   --secondarycolor: #1c1818;
   /* var(--secondarycolor); */
   --shadowcolor: #00ff80;
@@ -44,5 +48,4 @@
   /* var(--bordercolor); */
   --menuiconinvert: invert(0);
   /* var(--menuiconinvert); */
-
 }
