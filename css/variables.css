@@ -2,7 +2,7 @@
 :root {
   --primarycolor: #1b1b1b;
   /* var(--primarycolor); */
-  --navcolor: hwb(0 11% 89% / 0.7);
+  --navcolor: hwb(0 11% 89% / 1);
   /* var(--navcolor); */
   --secondarycolor: #e4e4e4;
   /* var(--secondarycolor); */
